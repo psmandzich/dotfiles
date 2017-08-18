@@ -1,0 +1,55 @@
+" -------------------------------------------------
+" Default Configuration
+" -------------------------------------------------
+set number
+set autoindent
+"colorscheme dark-ruby
+set background=dark
+
+" Tab configuration
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+" Autohiding marked parts
+" set foldmethod=marker
+
+" keeps words together
+set linebreak!
+
+" Highlight search results
+set hlsearch
+" File dependencies enabled
+syntax on
+syntax sync fromstart
+filetype plugin indent on
+
+" Necessary to show Unicode glyphs
+set encoding=utf-8
+
+" enable list-mode by default and expand tabs and trailing spaces
+set list
+set listchars=tab:>-,trail:·
+
+" menu in status line
+set wildmenu
+
+" -------------------------------------------------
+" Tools
+" -------------------------------------------------
+Plug 'ngmy/vim-rubocop'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-endwise'
+
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_ruby_checkers = ['rubocop']
+
+
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
