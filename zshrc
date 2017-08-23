@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/psmandzich/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 [[ -d $HOME/.profile ]] && source $HOME/.profile
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
