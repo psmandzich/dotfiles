@@ -49,7 +49,7 @@ export ZSH_THEME="bullet-train"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(oh-my-zsh-bootstrap rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler rake-fast ruby rvm rails capistrano)
+plugins=(zsh-completions git)
 
 
 # User configuration

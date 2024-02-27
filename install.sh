@@ -11,3 +11,6 @@ wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.
 curl "${DOT_URI}zshrc" > ~/.zshrc
 mkdir -p ~/.oh-my-zsh/custom/themes/
 curl 'https://raw.githubusercontent.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme' > ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme
+
+mkdir -p ~/.oh-my-zsh/custom/themes/plugins
+git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
