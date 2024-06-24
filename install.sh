@@ -3,7 +3,7 @@
 DOT_URI='https://raw.githubusercontent.com/psmandzich/dotfiles/master/'
 
 # VIM
-curl 'http://vim-bootstrap.com/generate.vim' --data 'langs=javascript&langs=php&langs=html&langs=ruby&editor=vim' > ~/.vimrc
+curl 'https://vim-bootstrap.com/generate.vim' --data 'langs=javascript&langs=typescript&langs=html&langs=ruby&frameworks=vuejs&editor=vim' > ~/.vimrc
 curl "${DOT_URI}vimrc.local" > ~/.vimrc.local
 
 # ZSH -- oh-my-zsh
